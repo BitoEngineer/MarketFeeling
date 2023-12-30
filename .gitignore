@@ -1,0 +1,36 @@
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.suo
+*.sdf
+*.opensdf
+*.cproj.user
+*.dotsettings.user
+*.opendb
+
+# Compiled source
+/bin/
+/obj/
+
+# NuGet
+*.nuget.props
+*.paket.props
+*.paket.targets
+packages/
+*.nupkg
+!.nuget/
+MarketFeeling.ScrapingWorker/obj/
+MarketFeeling.ScrapingWorker/bin/
+MarketFeeling.CnbcScraper/obj/
+MarketFeeling.CnbcScraper/bin/
+MarketFeeling.ChatGptClient/obj/
+.vs/
+MarketFeeling.ChatGptClient/bin/
