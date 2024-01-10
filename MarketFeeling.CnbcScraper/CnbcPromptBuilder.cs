@@ -9,7 +9,7 @@ namespace MarketFeeling.CnbcScraper
 {
     public static class CnbcPromptBuilder
     {
-        public static string GetArticleDescription(CnbcNewsStoryDto article)
+        public static string GetArticleDescription(CnbcNewsStoryDto article, string content)
         {
             var sb = new StringBuilder();
 
@@ -18,6 +18,8 @@ namespace MarketFeeling.CnbcScraper
             sb.Append(article.ShorterHeadline);
             sb.AppendLine();
             sb.Append(article.Description);
+            sb.AppendLine();
+            sb.Append(content);
             sb.AppendLine();
             sb.Append("Published at: "+article.DateLastPublished);
             sb.AppendLine();

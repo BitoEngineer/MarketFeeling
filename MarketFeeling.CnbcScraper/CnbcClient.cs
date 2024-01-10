@@ -1,4 +1,5 @@
-﻿using MarketFeeling.CnbcScraper.Models;
+﻿using HtmlAgilityPack;
+using MarketFeeling.CnbcScraper.Models;
 using Newtonsoft.Json;
 using System.Text.Json.Nodes;
 
@@ -31,6 +32,23 @@ namespace MarketFeeling.CnbcScraper
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<CnbcNewsListDto>(body);
+            }
+        }
+
+        public async Task<string> GetNew(string url)
+        {
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri(url)
+            };
+
+            using (var response = await _httpClient.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var htmlStr = await response.Content.ReadAsStringAsync();
+
+                return htmlStr;
             }
         }
     }
