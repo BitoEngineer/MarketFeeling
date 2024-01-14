@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketFeeling.ScrapingWorker", "MarketFeeling.ScrapingWorker\MarketFeeling.ScrapingWorker.csproj", "{3101001E-520C-401A-8085-864BA53342B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketFeeling.IndicatorsCalculator", "MarketFeeling.ScrapingWorker\MarketFeeling.IndicatorsCalculator.csproj", "{3101001E-520C-401A-8085-864BA53342B7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketFeeling.CnbcScraper", "MarketFeeling.CnbcScraper\MarketFeeling.CnbcScraper.csproj", "{F4E57AEE-B723-40AE-844E-8184E1CA9E77}"
 EndProject
@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketFeeling.ChatGptClient
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A671CD2A-839A-4185-A761-F331D3FE102A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketFeeling.CnbcScraper.Test", "MarketFeeling.CnbcScraper.Test\MarketFeeling.CnbcScraper.Test.csproj", "{3081D73F-2528-44C9-8463-BCE1D7D4701A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketFeeling.CnbcScraper.Tests", "MarketFeeling.CnbcScraper.Test\MarketFeeling.CnbcScraper.Tests.csproj", "{3081D73F-2528-44C9-8463-BCE1D7D4701A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketFeeling.Infrastructure", "MarketFeeling.Infrastructure\MarketFeeling.Infrastructure.csproj", "{BC757A79-3364-4FFB-BB54-8F3EE9B6C990}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketFeeling.XScrapper", "MarketFeeling.XScrapper\MarketFeeling.XScrapper.csproj", "{9DC9492E-877D-47E4-A9A1-D62B959FD8DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketFeeling.Infrastructure.Tests", "MarketFeeling.Infrastructure.Tests\MarketFeeling.Infrastructure.Tests.csproj", "{16F6643A-1F7B-4300-A402-ED616A29F16F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +41,25 @@ Global
 		{3081D73F-2528-44C9-8463-BCE1D7D4701A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3081D73F-2528-44C9-8463-BCE1D7D4701A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3081D73F-2528-44C9-8463-BCE1D7D4701A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC757A79-3364-4FFB-BB54-8F3EE9B6C990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC757A79-3364-4FFB-BB54-8F3EE9B6C990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC757A79-3364-4FFB-BB54-8F3EE9B6C990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC757A79-3364-4FFB-BB54-8F3EE9B6C990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC9492E-877D-47E4-A9A1-D62B959FD8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC9492E-877D-47E4-A9A1-D62B959FD8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC9492E-877D-47E4-A9A1-D62B959FD8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC9492E-877D-47E4-A9A1-D62B959FD8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F6643A-1F7B-4300-A402-ED616A29F16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F6643A-1F7B-4300-A402-ED616A29F16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F6643A-1F7B-4300-A402-ED616A29F16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F6643A-1F7B-4300-A402-ED616A29F16F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3081D73F-2528-44C9-8463-BCE1D7D4701A} = {A671CD2A-839A-4185-A761-F331D3FE102A}
+		{16F6643A-1F7B-4300-A402-ED616A29F16F} = {A671CD2A-839A-4185-A761-F331D3FE102A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D95EE44E-BCD9-45C8-A83F-23E6B5A9CC4D}

@@ -36,3 +36,9 @@ MarketFeeling.ChatGptClient/obj/
 MarketFeeling.ChatGptClient/bin/
 MarketFeeling.CnbcScraper.Test/bin/
 MarketFeeling.CnbcScraper.Test/obj/
+MarketFeeling.Infrastructure.Tests/bin/
+MarketFeeling.Infrastructure/bin/
+MarketFeeling.Infrastructure/obj/
+MarketFeeling.XScrapper/obj/
+MarketFeeling.XScrapper/bin/
+MarketFeeling.Infrastructure.Tests/obj/
