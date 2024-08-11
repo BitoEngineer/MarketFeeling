@@ -7,7 +7,7 @@ namespace MarketFeeling.ChatGptClient
 {
     public class ChatGptClient
     {
-        private const string API_KEY = "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";
+        private const string API_KEY = "TODO";
 
         private readonly HttpClient _httpClient;
         private readonly OpenAIService _openAiService;
